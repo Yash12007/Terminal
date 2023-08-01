@@ -36,7 +36,7 @@
   <div class="console">
     <div class="output"></div>
     <div class="input-container">
-      <span class="prompt">>></span>
+      <span class="prompt" style="color:green;">┌──(<span style="color:blue;">USER㉿Terminal</span>)-[<span style="color:blue;">~</span>]<br>└─<span style="color:blue;">$</span></span>
       <input class="input" type="text" autofocus>
     </div>
   </div>
@@ -54,7 +54,7 @@
     });
     function logCommand(command) {
       const newLine = document.createElement('div');
-      newLine.innerHTML = `<span class="prompt">┌──(USER㉿Terminal)-[~]<br>└─$</span> ${command}`;
+      newLine.innerHTML = `<span class="prompt" style="color:green;">┌──(<span style="color:blue;">USER㉿Terminal</span>)-[<span style="color:blue;">~</span>]<br>└─<span style="color:blue;">$</span></span> ${command}`;
       consoleOutput.appendChild(newLine);
       processCommand(command);
     }
