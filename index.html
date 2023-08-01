@@ -54,7 +54,7 @@
     });
     function logCommand(command) {
       const newLine = document.createElement('div');
-      newLine.innerHTML = `<span class="prompt">>></span> ${command}`;
+      newLine.innerHTML = `<span class="prompt">┌──(USER㉿Terminal)-[~]<br>└─$</span> ${command}`;
       consoleOutput.appendChild(newLine);
       processCommand(command);
     }
